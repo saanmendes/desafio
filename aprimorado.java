@@ -6,20 +6,20 @@ public class aprimorado { //permite o usuário adicionar a quantia de vetores e 
 
         int[] vetor = new int[scanner("Digite a quantidade de vetores para ordenar: ").nextInt()];
 
-        InserirValores(vetor);
+        inserirValores(vetor);
 
-        SelectionSort(vetor);
+        selectionSort(vetor);
 
-        ResultadoSelectionSort(vetor);
+        resultadoSelectionSort(vetor);
     }
 
-    public static void InserirValores(int[] vetor){
+    public static void inserirValores(int[] vetor){
         for (int indice = 0; indice < vetor.length; indice++) {
             vetor[indice] = scanner("Digite o valor que você deseja ordenar: ").nextInt();
         }
     }
 
-    public static void SelectionSort(int[] vetor){ //modo de fazer a ordenação
+    public static void selectionSort(int[] vetor){ //modo de fazer a ordenação
         int posicao_menor, auxiliar;
         for(int indice = 0; indice < vetor.length; indice++){
             posicao_menor = indice;
@@ -34,7 +34,7 @@ public class aprimorado { //permite o usuário adicionar a quantia de vetores e 
         }
     }
 
-    public static void ResultadoSelectionSort(int[] vetor){ //imprimir resultado
+    public static void resultadoSelectionSort(int[] vetor){ //imprimir resultado
         System.out.println("\nOrdenado com Selection Sort:");
         for(int indice = 0; indice < vetor.length; indice++){
             System.out.println(vetor[indice]);
